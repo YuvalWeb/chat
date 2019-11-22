@@ -1,4 +1,3 @@
-
 function getIdentity(source)
 	local identifier = GetPlayerIdentifiers(source)[1]
 	local result = MySQL.Sync.fetchAll("SELECT * FROM users WHERE identifier = @identifier", {['@identifier'] = identifier})
@@ -18,8 +17,6 @@ function getIdentity(source)
 		return nil
 	end
 end
-
-
 
 -- Advertisements 
 	RegisterCommand('ad', function(source, args, rawCommand)

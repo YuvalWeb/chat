@@ -78,5 +78,3 @@ AddEventHandler('sendProximityMessageDo', function(id, name, message)
     TriggerEvent('chatMessage', "", {255, 0, 0}, " ^0* " .. name .."  ".."^0  " .. message)
   end
 end)
-
-

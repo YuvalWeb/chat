@@ -1,4 +1,3 @@
-
 function getIdentity(source)
 	local identifier = GetPlayerIdentifiers(source)[1]
 	local result = MySQL.Async.fetchAll("SELECT * FROM users WHERE identifier = @identifier", {['@identifier'] = identifier})
@@ -52,13 +51,6 @@ AddEventHandler('chatMessage', function(source, n, message)
     CancelEvent()
 end)
 
-
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-
-
-
-
-
 RegisterServerEvent('fu_chat:server:Server')
 AddEventHandler('fu_chat:server:Server', function(source, message)
     TriggerClientEvent('chat:addMessage', source, {
@@ -67,7 +59,6 @@ AddEventHandler('fu_chat:server:Server', function(source, message)
     })
     CancelEvent()
 end)
-
 
 
 RegisterServerEvent('fu_chat:server:ooc')

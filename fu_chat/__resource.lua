@@ -1,7 +1,11 @@
 resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
-name 'TenthSin Chat based off Mythic & Nopixel'
-description 'Its a simple plug and play you can remove regular Chat and GTAOnline Chat from your resources and make sure you stop them then add start fu_chat'
+name 'Mythic Framework Chat'
+description 'Modified FiveM Chat Resource To Use Mythic Frameworks Permissions System'
+author 'Alzar - https://github.com/Alzar'
+version 'v1.0.0'
+url 'https://github.com/mythicrp/base'
+
 ui_page 'html/index.html'
 
 

@@ -109,7 +109,7 @@ small.help {
 }
 
 small.help::before {
-  content: '';
+  content: '*';
   color: rgba(255, 0, 0, 0.62);
 }
 
@@ -124,9 +124,9 @@ small.help::before {
 
 .chat-message {
   display: inline-block !important;
-  padding: 0.7vw;
+  padding: 0.5vw;
   margin: 0.1vw;
-  border-radius: 6px;
+  border-radius: 5px;
   background-color: rgba(77, 77, 77, 0.8);
   width: fit-content;
   max-width: 100%;
@@ -159,11 +159,11 @@ small.help::before {
 }
 
 .chat-message.emergency {
-  background-color: rgba(185, 51, 51, 0.8);
+  background-color: rgba(224, 50, 50, 0.8);
 }
 
 .chat-message.nonemergency {
-  background-color: rgba(206, 186, 6, 0.623);
+  background-color: rgba(112, 25, 25, 0.8);
 }
 
 .chat-message.help {
